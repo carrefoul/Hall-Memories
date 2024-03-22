@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "Lila": "¡Buenos días Alex! ¿Qué tal, cómo estas?",
+        "opcionA": "¡Buenas Lila! Pero no soy Alex, soy (nombreJugador).",
+        "opcionB": "¡Hola Lila!, estoy muy bien, ¿tú qué tal llevas el día?"
+    },
+    {
+        "id": 2,
+        "Lila": "¡Oh, qué vergüenza! Lo siento mucho, (nombreJugador). Últimamente ando con la cabeza un poco perdida.",
+        "opcionA": "No te preocupes Lila, todos tenemos malos días. ¿Tú qué tal hoy?"
+    },
+    {
+        "id": 3,
+        "Lila": "He tenido un tranquilo, ya sabes ocupada con las tareas de siempre. Oye, te veo con cara de preocupación, ¿ha pasado algo?",
+        "opcionA": "Bueno, la verdad es que anoche, vi a alguien merodeando cerca del edificio. Parecía sospechoso. ¿Has notado algo extraño últimamente?",
+        "opcionB": "Nada, no es muy importante. Por cierto, ¿te vas a algún sitio este puente?"
+    },
+    {
+        "id": 4,
+        "Lila": "Dios mío! No, no he visto nada. ¿Crees que tendríamos que llamar a la policía?",
+        "opcionA": "Vamos a dejarlo así por el momento, igual han sido alucinaciones mías. Pero si vuelve a pasar, llamamos sin pensárnoslo.",
+        "opcionB": "Creo que es buena idea, mejor prevenirlo ahora por si las mocas, que arrepentirnos después."
+    },
+    {
+        "id": 5,
+        "Lila": "¡Qué mal cuerpo! La próxima vez que pase llamaré a mi sobrino, que es policía... creo.",
+        "opcionA": "Me parece buena idea, esperemos que se quede en un susto. Por cierto, ¿te vas a algún sitio este puente?",
+        "opcionB": "Esperemos que no. Bueno Lila, me subo ya a casa que se me ha soltado una estantería de la pared y tengo que ir a arreglarlo. ¡Nos vemos!"
+    },
+    {
+        "id": 6,
+        "Lila": "¿Puente? Yo me quedo aquí en el edificio, ya no estoy para viajes la verdad. ¿Tú qué tenías pensado?",
+        "opcionA": "Pues mira, me voy los tres días a un pueblecillo de Galicia. Lo único que no sé muy bien qué tiempo va a hacer. Ya sabes como es esa zona, un día de turras de calor y al día siguiente vas con el chubasquero.",
+        "opcionB": "Bueno, todavía no lo tengo pensado, ya se verá"
+    },
+    {
+        "id": 7,
+        "Lila": "¡Pero si yo esas cosas siempre me las apunto en la agenda! Un segundo, que lo miro y te digo... Mira, en esos 3 días la máxima es de 18ºC.",
+        "opcionA": "Vaya, ¡muchas gracias por la ayuda Lila! ¿Qué más cosas apuntas en esa agenda?",
+        "opcionB": "Vaya, ¡muchas gracias por la ayuda Lila! Bueno, Yo me tengo que subir a casa, que se me ha atascaso el fregadero y tengo que llamar al fontanero. ¡Nos vemos!"
+    },
+    {
+        "id": 8,
+        "Lila": "Pues ahora mismo estoy aprendiendo francés, que me ayuda mucho para tener la memoria activa. Dime qué quieres que te traduzca, así voy practicando.",
+        "opcionA": "¡Pero bueno! A ver, ¿cómo se dice `(textoEspañol)`?",
+        "opcionB": "Mi padre está aprendiendo francés también. Se ha descargado Duolingo y no se salta ni un día el tío. Bueno Lila, me tengo que subir ya a casa, que no he sacado la ropa de la lavadora. ¡Nos vemos!"
+    },
+    {
+        "id": 9,
+        "Lila": "Déjame que lo mire, que lo tenía en esta página... Vale, lo he encontrado, se dice: `(textoFrancés)`",
+        "opcionA": "Siempre me sorprendes, aunque me podrías haber dicho cualquier otra cosa y te creería igual. Bueno Lila, me subo ya a casa, que hoy he tenido un día largo."
+    },
+    {
+        "id": 10,
+        "Lila": "¡Ay!, antes de que te vayas. Creo que he perdido las llaves del almacén y estoy segura de que no han salido de esta garita. ¿Me ayudas un momento a buscarlas?",
+        "opcionA": "Claro que sí, entre los dos las encontramos en un momento.",
+        "opcionB": "Lo siento, es que tengo mucha prisa, tengo que arreglar una estantería que estaba suelta. ¡Nos vemos!"
+    },
+    {
+        "id": 11,
+        "Lila": "Vaya, seguro que surge algo. Yo seguramente esté practicando francés durante esos días, voy apuntando todo lo que aprendo en mi agenda.",
+        "opcionA": "¡Pero bueno! A ver, ¿cómo se dice `(textoEspañol)`?",
+        "opcionB": "Mi padre está aprendiendo francés también. Se ha descargado Duolingo y no se salta ni un día el tío. Bueno Lila, me tengo que subir ya a casa, que no he sacado la ropa de la lavadora. ¡Nos vemos!"
+    }
+]
+
+
+
+
+

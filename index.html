@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boiler to start progrmming :P</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.0/dist/phaser-arcade-physics.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- <script src="app/main.js"></script> -->
+    <script src="app/game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script> -->
+
+    <!-- <script src="app/traduccion.js"></script> -->
+
+</head>
+
+<body>
+    <div class="pantallaInicial" id="pantallaInicial">
+        <button class="nuevaPartida" id="nuevaPartidaBtn" style="display: block;">Nueva partida</button>
+        <div class="nombreJugador" style="display: none;">
+            <div class="form">
+                <label for="nombre">¿Cómo te llamas?</label><br>
+                <input id="nombre" placeholder="">
+            </div>
+            <button id="continuar" class="continuar">Continuar</button>
+        </div>
+    </div>
+
+    <div class="escenaDialogo" style="display: none;">
+        <div class="cajaDialogo">
+            <div id="text" class="text">Text</div>
+            <div id="option-buttons" class="btn-grid">
+                <div id="buttonA" class="btn">OptionA</div>
+                <div id="buttonB" class="btn">OptionB</div>
+            </div>
+        </div>
+        <div class="objetos">
+            <div class="lampara">
+                <img src="assets/img/lampara.png" alt="">
+            </div>
+            <div class="reloj">
+                <img src="assets/img/reloj.png" alt="">
+            </div>
+            <div class="agenda">
+                <img src="assets/img/agenda.png" alt="">
+            </div>
+            <div class="planta">
+                <img src="assets/img/planta.png" alt="">
+            </div>
+            <div class="cafe">
+                <img src="assets/img/taza.png" alt="">
+            </div>
+        </div>
+        <div class="personaje">
+            <img src="assets/img/lilaFrente.png" alt="">
+        </div>
+    </div>
+
+    <div class="finalScreen" id="finalScreen">
+        <p id="finalText"></p>
+        <button id="reiniciarBtn" style="display: none;">Reiniciar juego</button>
+    </div>
+
+    <div class="escenaLLaves" style="display: none;">
+        <div class="objetos-llaves">
+            <div class="lampara-llaves">
+                <div class="drag-drop-area"></div>
+                <img src="assets/img/lampara.png" alt="">
+            </div>
+            <div class="reloj-llaves">
+                <img src="assets/img/reloj.png" alt="">
+            </div>
+            <div class="agenda-llaves">
+                <img src="assets/img/agenda.png" alt="">
+            </div>
+            <div class="planta-llaves">
+                <img src="assets/img/planta.png" alt="">
+            </div>
+            <div class="cafe-llaves">
+                <img src="assets/img/taza.png" alt="">
+            </div>
+        </div>
+        <div class="personaje-llaves">
+            <img src="assets/img/lilaFrente.png" alt="">
+            <div class="lilaPerfil" style="display: none;">
+                <img class="perfil" src="assets/img/lilaPerfil.png" alt="">
+                <img class="llaves" src="assets/img/llave.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
