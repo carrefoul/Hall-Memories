@@ -1,388 +1,118 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  height: 100%;
-}
-article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-
-body {
-  margin: 0;
-  font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.4;
-  color: #333;
-  text-align: left;
-  background-color: #fff;
-  height: 100%;
-}
-
-[tabindex="-1"]:focus {
-  outline: 0 !important;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-abbr[title],
-abbr[data-original-title] {
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  cursor: help;
-  border-bottom: 0;
-}
-
-address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
-}
-
-ol,
-ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-
-blockquote {
-  margin: 0 0 1rem;
-}
-
-dfn {
-  font-style: italic;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-
-a {
-  color: #345c8d;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-a:hover {
-  color: #264468;
-  text-decoration: none;
-}
-
-a:not([href]):not([tabindex]) {
-  color: inherit;
-  text-decoration: none;
-}
-a:not([href]):not([tabindex]):hover:focus {
-  color: inherit;
-  text-decoration: none;
-}
-a:not([href]):not([tabindex]):focus {
-  outline: 0;
-}
-
-pre,
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-pre {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
-  -ms-overflow-style: scrollbar;
-}
-
-figure {
-  margin: 0 0 1rem;
-}
-
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-a,
-area,
-button,
-[role=button],
-input:not([type=range]),
-label,
-select,
-summary,
-textarea {
-  touch-action: manipulation;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-caption {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  color: #595959;
-  text-align: left;
-  caption-side: bottom;
-}
-
-th {
-  text-align: inherit;
-}
-
-label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-
-button {
-  border-radius: 0;
-}
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-input,
-button,
-select,
-optgroup,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-button,
-input {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-html [type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
-
-input[type=radio],
-input[type=checkbox] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type=date],
-input[type=time],
-input[type=datetime-local],
-input[type=month] {
-  -webkit-appearance: listbox;
-}
-
-textarea {
-  overflow: auto;
-  resize: vertical;
-}
-
-fieldset {
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-legend {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  line-height: inherit;
-  color: inherit;
-  white-space: normal;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type=search] {
-  outline-offset: -2px;
-  -webkit-appearance: none;
-}
-
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  font: inherit;
-  -webkit-appearance: button;
-}
-
-output {
-  display: inline-block;
-}
-
-summary {
-  display: list-item;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none !important;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .pantallaInicial {
-  display: flex;
+  display: grid;
+  grid-template-rows: auto 1fr;
   flex-direction: column;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
+  gap: 0;
+  background-image: url("../img/pantallaInicio.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.pantallaInicial .titulo {
+  height: 50px;
+  overflow: hidden;
+  padding-top: 70%;
+}
+.pantallaInicial .titulo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .pantallaInicial .nuevaPartida {
+  align-self: start;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid transparent;
   background-color: transparent;
-  padding: 5px;
-  color: black;
+  padding-top: 60px;
+  color: white;
   text-decoration: none;
   display: inline-block;
-}
-.pantallaInicial .nuevaPartida:hover {
-  border: 2px solid black;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
 }
 .pantallaInicial .nombreJugador {
+  align-self: start;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-}
-.pantallaInicial .nombreJugador input {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid black;
-  padding: 0px;
+  color: white;
 }
 .pantallaInicial .nombreJugador .form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.pantallaInicial .nombreJugador input:focus {
+.pantallaInicial .nombreJugador .form label {
+  font-family: "Space Mono", monospace;
+  color: white;
+}
+.pantallaInicial .nombreJugador .form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 0px;
+  font-family: "Space Mono", monospace;
+  color: white;
+}
+.pantallaInicial .nombreJugador .form input:focus {
   outline: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+}
+.pantallaInicial .nombreJugador .form .mensajeError {
+  font-family: "Space Mono", monospace;
+  font-size: 0.7rem;
+  padding-top: 10px;
 }
 .pantallaInicial .nombreJugador .continuar {
   margin-top: 30px;
   align-self: center;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid transparent;
   background-color: transparent;
   padding: 5px;
-  color: black;
+  color: white;
   text-decoration: none;
   display: inline-block;
+  font-family: "Space Mono", monospace;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pantallaInicial .controlAudio {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+}
+.pantallaInicial .controlAudio img {
+  width: 30px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
 }
 
 .escenaDialogo {
+  background-color: #1b1b1b;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("../img/fondo.png");
+  background-image: url("../img/fondo2.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 .escenaDialogo .cajaDialogo {
@@ -392,12 +122,15 @@ template {
   flex-direction: column;
   width: 800px;
   height: 150px;
-  bottom: 30px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   gap: 20px;
-  background-color: white;
   justify-content: center;
+}
+.escenaDialogo .cajaDialogo .text {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
 }
 .escenaDialogo .cajaDialogo .btn-grid {
   display: flex;
@@ -405,9 +138,14 @@ template {
 }
 .escenaDialogo .cajaDialogo .btn-grid .btn {
   cursor: pointer;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
 }
 .escenaDialogo .cajaDialogo .btn-grid .btn:hover {
-  color: blue;
+  font-weight: 700;
+}
+.escenaDialogo .cajaDialogo .btn-grid .btn.with-arrow::before {
+  content: "> ";
 }
 .escenaDialogo .cajaDialogo .btn-grid .btn #spanishText {
   background-color: transparent;
@@ -417,13 +155,15 @@ template {
   padding-bottom: 0px;
   outline: none;
   margin-bottom: 5px;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
 }
 .escenaDialogo .personaje {
   position: absolute;
-  height: 55%;
+  height: 50%;
   width: auto;
-  top: 12%;
-  right: 40%;
+  top: 11%;
+  right: 35%;
 }
 .escenaDialogo .personaje img {
   width: 100%;
@@ -439,10 +179,10 @@ template {
 }
 .escenaDialogo .objetos .lampara {
   position: absolute;
-  top: 35%;
+  top: 30%;
   right: 60%;
-  width: 13%;
-  height: auto;
+  width: auto;
+  height: 37%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -455,10 +195,10 @@ template {
 }
 .escenaDialogo .objetos .reloj {
   position: absolute;
-  top: 13%;
-  right: 25%;
-  width: 7%;
-  height: auto;
+  top: 11%;
+  right: 26%;
+  width: auto;
+  height: 15%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -471,10 +211,10 @@ template {
 }
 .escenaDialogo .objetos .agenda {
   position: absolute;
-  top: 62%;
-  right: 40%;
-  width: 17%;
-  height: auto;
+  top: 57%;
+  right: 38%;
+  width: auto;
+  height: 18%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -487,10 +227,10 @@ template {
 }
 .escenaDialogo .objetos .planta {
   position: absolute;
-  top: 9%;
-  right: 14%;
-  width: 9%;
-  height: auto;
+  top: 4%;
+  right: 16%;
+  width: auto;
+  height: 24%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -503,10 +243,10 @@ template {
 }
 .escenaDialogo .objetos .cafe {
   position: absolute;
-  top: 70%;
-  right: 25%;
-  width: 7%;
-  height: auto;
+  top: 64%;
+  right: 28%;
+  width: auto;
+  height: 8%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -519,21 +259,39 @@ template {
 }
 
 .escenaLLaves {
+  background-color: black;
   width: 100%;
   height: 100%;
   position: relative;
-  background-image: url("../img/fondo.png");
+  background-image: url("../img/fondo2.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-  position: relative;
+  background-size: cover;
+}
+.escenaLLaves .mensajeLlaves {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  width: 800px;
+  height: 50px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 20px;
+  justify-content: center;
+}
+.escenaLLaves .mensajeLlaves .textoLlaves {
+  font-family: "Space Mono", monospace;
+}
+.escenaLLaves .mensajeLlaves .textoVuelta {
+  font-family: "Space Mono", monospace;
 }
 .escenaLLaves .personaje-llaves {
   position: absolute;
-  height: 55%;
+  height: 50%;
   width: auto;
-  top: 12%;
-  right: 40%;
+  top: 11%;
+  right: 35%;
 }
 .escenaLLaves .personaje-llaves img {
   width: 100%;
@@ -541,18 +299,45 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.escenaLLaves .lilaPerfil {
+  position: absolute;
+  height: 50%;
+  width: auto;
+  top: 11%;
+  right: 35%;
+}
+.escenaLLaves .lilaPerfil .perfil {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+  background-color: transparent;
+}
+.escenaLLaves .lilaPerfil .llaves {
+  width: auto;
+  height: 20%;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  z-index: 2;
+  transform: rotate(130deg);
+}
 .escenaLLaves .objetos-llaves {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 2;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .escenaLLaves .objetos-llaves .lampara-llaves {
   position: absolute;
-  top: 35%;
+  top: 30%;
   right: 60%;
-  width: 13%;
-  height: auto;
+  width: auto;
+  height: 37%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -565,10 +350,10 @@ template {
 }
 .escenaLLaves .objetos-llaves .reloj-llaves {
   position: absolute;
-  top: 13%;
-  right: 25%;
-  width: 7%;
-  height: auto;
+  top: 11%;
+  right: 26%;
+  width: auto;
+  height: 15%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -581,10 +366,10 @@ template {
 }
 .escenaLLaves .objetos-llaves .agenda-llaves {
   position: absolute;
-  top: 62%;
-  right: 40%;
-  width: 17%;
-  height: auto;
+  top: 57%;
+  right: 38%;
+  width: auto;
+  height: 18%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -597,10 +382,10 @@ template {
 }
 .escenaLLaves .objetos-llaves .planta-llaves {
   position: absolute;
-  top: 9%;
-  right: 14%;
-  width: 9%;
-  height: auto;
+  top: 4%;
+  right: 16%;
+  width: auto;
+  height: 24%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -613,10 +398,10 @@ template {
 }
 .escenaLLaves .objetos-llaves .cafe-llaves {
   position: absolute;
-  top: 70%;
-  right: 25%;
-  width: 7%;
-  height: auto;
+  top: 64%;
+  right: 28%;
+  width: auto;
+  height: 8%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -626,6 +411,105 @@ template {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.finalScreen {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/fondoFinal.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.finalScreen #finalText {
+  position: fixed;
+  left: 25%;
+  color: white;
+  font-family: "Space Mono", monospace;
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+.finalScreen #reiniciarBtn {
+  color: white;
+  font-family: "Space Mono", monospace;
+  width: auto;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  padding-top: 150px;
+}
+.finalScreen #reiniciarBtn:hover {
+  font-weight: bold;
+}
+
+.escenaFinal1 {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/fondoFinal.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.escenaFinal1 .textoFinal1 {
+  position: fixed;
+  left: 25%;
+  color: white;
+  font-family: "Space Mono", monospace;
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+.escenaFinal1 .textoOculto {
+  position: fixed;
+  left: 25%;
+  color: white;
+  font-family: "Space Mono", monospace;
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+.escenaFinal1 #siguienteBtn {
+  color: white;
+  font-family: "Space Mono", monospace;
+  width: auto;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  padding-top: 150px;
+}
+.escenaFinal1 #siguienteBtn:hover {
+  font-weight: bold;
+}
+.escenaFinal1 #siguienteBtn2 {
+  color: white;
+  font-family: "Space Mono", monospace;
+  width: auto;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  padding-top: 150px;
+}
+.escenaFinal1 #siguienteBtn2:hover {
+  font-weight: bold;
+}
+.escenaFinal1 #reiniciarJuego {
+  color: white;
+  font-family: "Space Mono", monospace;
+  width: auto;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  padding-top: 150px;
+}
+.escenaFinal1 #reiniciarJuego:hover {
+  font-weight: bold;
 }
 
 .html {
